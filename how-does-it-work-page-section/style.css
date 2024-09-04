@@ -1,0 +1,102 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.skills-verification-steps-section {
+    /* background-color: cadetblue; */
+    /* background: linear-gradient(0deg, #fff, cadetblue); */
+}
+
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+
+}
+
+.container h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.skills-verification-steps-content{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+
+    position: relative;
+}
+
+.skills-verification-steps-arrows{
+    /* border:1px solid red; */
+
+    width: calc(100% - 140px);
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+
+    position: absolute;
+    top: 60px;
+    left: 65px;
+
+}
+
+.skills-verification-steps-arrows::after{
+
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    height: 1px;
+    background-color: #b7c9cc;
+}
+
+.skills-verification-steps-ol{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+}
+
+.skills-verification-steps-item{
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.skills-icon-wrapper{
+    position: relative;
+}
+
+.skill-icon{
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skills-verification-ol-text{
+    text-align: center;
+    font-size: 1rem;
+    /* color: #fff; */
+}
+
+@media screen and (max-width: 720px) {
+
+    .skills-verification-steps-arrows{
+        display: none;
+    }
+    
+    .skills-verification-steps-ol{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
